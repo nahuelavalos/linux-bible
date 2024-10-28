@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"></span><br></p>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>LINUX</b></span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>0. Post-Instalacion</b></span></h2>
+<p class="p5"><span class="s1">$ sudo passwd <span class="Apple-converted-space">                                        </span><b>(cambiar password al usuario "root")</b></span></p>
+<p class="p5"><span class="s1">$ su<span class="Apple-converted-space">                                                  </span><b>(login como "root")</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">$ sudo apt-get install build-essentials <span class="Apple-converted-space">              </span><b>(instalar utilidades para compilar programas)</b></span></p>
+<p class="p5"><span class="s1">$ sudo apt-get install manpages-dev <span class="Apple-converted-space">                  </span><b>(instalar paginas de manual)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">$ sudo apt-get install virtualbox-guest-dkms<span class="Apple-converted-space">          </span><b>(instalar auto-ajuste de pantalla para Virtualbox)</b></span></p>
+<p class="p5"><span class="s1">$ sudo apt-get install vim<span class="Apple-converted-space">                            </span><b>(instalar VIM para corregir el mal funcionamiento del VI en Ubuntu)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">$ sudo apt-get update <span class="Apple-converted-space">                                </span><b>(verificar nuevos repositorios)</b></span></p>
+<p class="p5"><span class="s1">$ sudo apt-get upgrade<span class="Apple-converted-space">                                </span><b>(instalar nuevos repositorios)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">$ sudo apt-get install<span class="Apple-converted-space">                                </span><b>(instalar programa)</b></span></p>
+<p class="p5"><span class="s1">$ sudo apt-get --purge remove <span class="Apple-converted-space">                        </span><b>(desinstalar programa y eliminar configuracion)</b></span></p>
+<p class="p5"><span class="s1">$ sudo apt-get autoremove <span class="Apple-converted-space">                            </span><b>(eliminar paquetes que son innecesarios)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"># mkdir /media/pendrive <span class="Apple-converted-space">                              </span><b>(crear carpeta para montar usb)</b></span></p>
+<p class="p5"><span class="s1"># mount -t vfat /dev/sdb1 /media/pendrive <span class="Apple-converted-space">            </span><b>(montar usb)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">/etc/hostname <span class="Apple-converted-space">                                        </span><b>(modificar para cambiar el nombre de la PC ==&gt; sigue...)</b></span></p>
+<p class="p5"><span class="s1">/etc/hosts<span class="Apple-converted-space">                                            </span><b>(modificar la linea que empieza con "127.0.1.1" para cambiar el nombre de la PC ==&gt; reiniciar sesion)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><i>CTRL+ALT+Fx</i> <span class="Apple-converted-space">                                          </span><b>(cambiar de consola)</b></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>1. Directorios</b></span></h2>
+<p class="p5"><span class="s1">/bin<span class="Apple-converted-space">            </span><b>(utilerias = archivos ejecutables)</b></span></p>
+<p class="p5"><span class="s1">/boot <span class="Apple-converted-space">          </span><b>(inicio)</b></span></p>
+<p class="p5"><span class="s1">/cdrom<span class="Apple-converted-space">          </span><b>(cd-rom)</b></span></p>
+<p class="p5"><span class="s1">/dev<span class="Apple-converted-space">            </span><b>(dispositivos)</b></span></p>
+<p class="p5"><span class="s1">/etc<span class="Apple-converted-space">            </span><b>(configuracion)</b></span></p>
+<p class="p5"><span class="s1">/home <span class="Apple-converted-space">          </span><b>(carpeta de los usuarios)</b></span></p>
+<p class="p5"><span class="s1">/lib<span class="Apple-converted-space">            </span><b>(librerias)</b></span></p>
+<p class="p5"><span class="s1">/media<span class="Apple-converted-space">          </span><b>(dispositivos extraibles)</b></span></p>
+<p class="p5"><span class="s1">/mnt<span class="Apple-converted-space">            </span><b>(*vacio* dispositivos extraibles)</b></span></p>
+<p class="p5"><span class="s1">/opt<span class="Apple-converted-space">            </span><b>(paquetes)</b></span></p>
+<p class="p5"><span class="s1">/proc <span class="Apple-converted-space">          </span><b>(procesos en ejecucion)</b></span></p>
+<p class="p5"><span class="s1">/root <span class="Apple-converted-space">          </span><b>(carpeta del "super-usuario")</b></span></p>
+<p class="p5"><span class="s1">/run<span class="Apple-converted-space">            </span><b>(informacion del sistema desde que se inicio)</b></span></p>
+<p class="p5"><span class="s1">/sbin <span class="Apple-converted-space">          </span><b>(utilerias del "super-usuario")</b></span></p>
+<p class="p5"><span class="s1">/srv<span class="Apple-converted-space">            </span><b>(servidores)</b></span></p>
+<p class="p5"><span class="s1">/sys<span class="Apple-converted-space">            </span><b>(informacion de los dispositivos conectados)</b></span></p>
+<p class="p5"><span class="s1">/tmp<span class="Apple-converted-space">            </span><b>(archivos temporales)</b></span></p>
+<p class="p5"><span class="s1">/usr<span class="Apple-converted-space">            </span><b>(red local)</b></span></p>
+<p class="p5"><span class="s1">/var<span class="Apple-converted-space">            </span><b>(archivos variables)</b></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>2. Comandos</b></span></h2>
+<p class="p5"><span class="s1">man <span class="Apple-converted-space">                                                  </span><b>(paginas de manual)</b></span></p>
+<p class="p5"><span class="s1">info<span class="Apple-converted-space">                                                  </span><b>(documentacion / usar cuando "man" no es suficiente)</b></span></p>
+<p class="p5"><span class="s1">help<span class="Apple-converted-space">                                                  </span><b>(ayuda sobre comandos internos)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">head<span class="Apple-converted-space">                                                  </span><b>(desplegar las primeras lineas de un archivo)</b></span></p>
+<p class="p5"><span class="s1">tail<span class="Apple-converted-space">                                                  </span><b>(desplegar las ultimas lineas de un archivo)</b></span></p>
+<p class="p5"><span class="s1">more<span class="Apple-converted-space">                                                  </span><b>(mostrar contenido de un archivo / avanzar)</b></span></p>
+<p class="p5"><span class="s1">less<span class="Apple-converted-space">                                                  </span><b>(mostrar contenido de un archivo / avanzar y retroceder)</b></span></p>
+<p class="p5"><span class="s1">cat <span class="Apple-converted-space">                                                  </span><b>(desplegar todas las lineas de un archivo)</b></span></p>
+<p class="p5"><span class="s1">rev <span class="Apple-converted-space">                                                  </span><b>(desplegar todas las lineas de un archivo invertidas)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">who -ub <span class="Apple-converted-space">                                              </span><b>(desplegar informacion de todos los usuarios)</b></span></p>
+<p class="p5"><span class="s1">who am i<span class="Apple-converted-space">                                              </span><b>(mostrar informacion del usuario)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">df -h <span class="Apple-converted-space">                                                </span><b>(ver espacio en disco)</b></span></p>
+<p class="p5"><span class="s1">du -h <span class="Apple-converted-space">                                                </span><b>(ver tamaño de archivos y carpetas)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">whereis <span class="Apple-converted-space">                                              </span><b>(mostrar ubicación de un archivo)</b></span></p>
+<p class="p5"><span class="s1">whatis<span class="Apple-converted-space">                                                </span><b>(descripcion breve de un archivo)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">touch <span class="Apple-converted-space">                                                </span><b>(crear archivo)</b></span></p>
+<p class="p5"><span class="s1">mkdir <span class="Apple-converted-space">                                                </span><b>(crear carpeta)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">cp<span class="Apple-converted-space">                                                    </span><b>(copiar archivo)</b></span></p>
+<p class="p5"><span class="s1">cp -r <span class="Apple-converted-space">                                                </span><b>(copiar carpeta)</b></span></p>
+<p class="p5"><span class="s1">mv<span class="Apple-converted-space">                                                    </span><b>(mover/renombrar archivo)</b></span></p>
+<p class="p5"><span class="s1">rm<span class="Apple-converted-space">                                                    </span><b>(borrar archivo)</b></span></p>
+<p class="p5"><span class="s1">rm -r <span class="Apple-converted-space">                                                </span><b>(borrar carpeta)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">cd<span class="Apple-converted-space">                                                    </span><b>(ubicar directorio)</b></span></p>
+<p class="p5"><span class="s1">cd .. <span class="Apple-converted-space">                                                </span><b>(ubicar directorio anterior)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">ls<span class="Apple-converted-space">                                                    </span><b>(desplegar lista de archivos)</b></span></p>
+<p class="p5"><span class="s1">ls -ltrh<span class="Apple-converted-space">                                              </span><b>(desplegar lista de archivos con informacion)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">pwd <span class="Apple-converted-space">                                                  </span><b>(directorio actual)</b></span></p>
+<p class="p5"><span class="s1">date<span class="Apple-converted-space">                                                  </span><b>(fecha actual)</b></span></p>
+<p class="p5"><span class="s1">cal <span class="Apple-converted-space">                                                  </span><b>(calendario actual)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">uniq<span class="Apple-converted-space">                                                  </span><b>(omitir o reportar cadenas repetidas)</b></span></p>
+<p class="p5"><span class="s1">grep<span class="Apple-converted-space">                                                  </span><b>(buscar cadenas - filtrar string)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">clear <span class="Apple-converted-space">                                                </span><b>(limpiar la terminal)</b></span></p>
+<p class="p5"><span class="s1">reset <span class="Apple-converted-space">                                                </span><b>(reiniciar la terminal)</b></span></p>
+<p class="p5"><span class="s1">exit<span class="Apple-converted-space">                                                  </span><b>(salir de la terminal)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">uptime<span class="Apple-converted-space">                                                </span><b>(ver el tiempo que lleva encendido el equipo)</b></span></p>
+<p class="p5"><span class="s1">uname -a<span class="Apple-converted-space">                                              </span><b>(ver informacion del sistema)</b></span></p>
+<p class="p5"><span class="s1">cat /etc/issue<span class="Apple-converted-space">                                        </span><b>(ver la version del sistema operativo)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">file *<span class="Apple-converted-space">                                                </span><b>(desplegar lista de tipos de archivo)</b></span></p>
+<p class="p5"><span class="s1">history <span class="Apple-converted-space">                                              </span><b>(desplegar lista de comandos ejecutados)</b></span></p>
+<p class="p5"><span class="s1">last<span class="Apple-converted-space">                                                  </span><b>(desplegar lista de los ultimos usuarios logueados)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">ps -fe<span class="Apple-converted-space">                                                </span><b>(estado de los procesos del usuario)</b></span></p>
+<p class="p5"><span class="s1">ps ux <span class="Apple-converted-space">                                                </span><b>(estado de los procesos de la maquina)</b></span></p>
+<p class="p5"><span class="s1">pstree -p <span class="Apple-converted-space">                                            </span><b>(arbol de procesos)</b></span></p>
+<p class="p5"><span class="s1">top <span class="Apple-converted-space">                                                  </span><b>("administrador de tareas" ==&gt; pulsar la tecla "C" para obtener distinta info)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">du -h --max-depth=1 <span class="Apple-converted-space">                                  </span><b>(listar todos los archivos ubicados en el directorio actual y sus subcarpetas)</b></span></p>
+<p class="p5"><span class="s1">grep -r <i>STRING</i> /root<span class="Apple-converted-space">                                  </span><b>(listar los archivos que contienen la cadena <i>STRING</i>)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">touch -t yyyymmddhhmm <span class="Apple-converted-space">                                </span><b>(cambiar fecha a un archivo)</b></span></p>
+<p class="p5"><span class="s1">date --set "yyyy-mm-dd hh:mm" <span class="Apple-converted-space">                        </span><b>(cambiar fecha al sistema)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">date +"%H:%M:%S del %A %-d de %B del %Y"<span class="Apple-converted-space">              </span><b>(dia de la fecha)</b></span></p>
+<p class="p5"><span class="s1">echo "$(($(date +%j -d"Dec 31")-$(date +%-j)))" <span class="Apple-converted-space">      </span><b>(cantidad de dias que faltan para que termine el año)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">curl ifconfig.me<span class="Apple-converted-space">                                      </span><b>(averiguar mi IP Publica)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">netstat -anp | grep <i>[puerto]</i><span class="Apple-converted-space">                          </span><b>(ver sin un puerto esta ocupado --&gt; </b>LISTEN <i>[PID]</i>/java<b>)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">adduser <span class="Apple-converted-space">                                              </span><b>(agregar usuario)</b></span></p>
+<p class="p5"><span class="s1">passwd<span class="Apple-converted-space">                                                </span><b>(modificar contraseña del usuario)</b></span></p>
+<p class="p5"><span class="s1">deluser <span class="Apple-converted-space">                                              </span><b>(eliminar usuario)</b></span></p>
+<p class="p5"><span class="s1">sudo visudo <span class="Apple-converted-space">                                          </span><b>(permisos usuarios)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">shutdown now / init 0 <span class="Apple-converted-space">                                </span><b>(apagar el equipo)</b></span></p>
+<p class="p5"><span class="s1">reboot / init 6 <span class="Apple-converted-space">                                      </span><b>(reiniciar el equipo)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">nohup <i>COMANDO</i> &amp; <span class="Apple-converted-space">                                      </span><b>(ejecutar en segundo plano, se almacena la salida en nohup.out)</b></span></p>
+<p class="p5"><span class="s1">nohup <i>COMANDO</i> 1&gt;/dev/null 2&gt;/dev/null &amp; <span class="Apple-converted-space">              </span><b>(ejecutar en segundo plano, sin almacenar y sin mostrar la salida por pantalla)</b></span></p>
+<p class="p5"><span class="s1">disown<span class="Apple-converted-space">                                                </span><b>(desligar los procesos de la terminal ==&gt; sirve para cerrar la terminal cuando hay procesos en ejecucion)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">cat /etc/crontab<span class="Apple-converted-space">                                      </span><b>(informacion sobre la ejecucion de scripts con crontab)</b></span></p>
+<p class="p5"><span class="s1">crontab -l<span class="Apple-converted-space">                                            </span><b>(listar los scripts croneados)</b></span></p>
+<p class="p5"><span class="s1">crontab -e<span class="Apple-converted-space">                                            </span><b>(editar los scripts para cronearlos ==&gt; se recomienda editar con <i>nano</i>)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">/home/nahuel/.bash_profile<span class="Apple-converted-space">                            </span><b>(archivo oculto que contiene los scripts que el usuario "nahuel" ejecuta automaticamente al loguearse ==&gt; Ubuntu/Oracle)</b></span></p>
+<p class="p5"><span class="s1">/home/nahuel/.profile <span class="Apple-converted-space">                                </span><b>(archivo oculto que contiene los scripts que el usuario "nahuel" ejecuta automaticamente al loguearse ==&gt; Raspbian)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">kill -15<span class="Apple-converted-space">                                              </span><b>(señal que solicita terminar un proceso)</b></span></p>
+<p class="p5"><span class="s1">kill -9 <span class="Apple-converted-space">                                              </span><b>(señal que mata a un proceso, no puede ser capturada ni ignorada)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">md5sum<span class="Apple-converted-space">                                                </span><b>(aplicar hash MD5 a un archivo)</b></span></p>
+<p class="p5"><span class="s1">sha1sum <span class="Apple-converted-space">                                              </span><b>(aplicar hash SHA-1 a un archivo)</b></span></p>
+<p class="p5"><span class="s1">sha512sum <span class="Apple-converted-space">                                            </span><b>(aplicar hash SHA-512 a un archivo)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">scp <span class="Apple-converted-space">                                                  </span><b>(copiar archivos entre equipos)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">sed <span class="Apple-converted-space">                                                  </span><b>(comando que permite manipular cadenas de texto)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">wget<span class="Apple-converted-space">                                                  </span><b>(scrapear el contenido de una pagina web)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><i>Ctrl+C</i><span class="Apple-converted-space">                                                </span><b>(finalizar ejecucion en la terminal)</b></span></p>
+<p class="p5"><span class="s1"><i>TAB</i> <span class="Apple-converted-space">                                                  </span><b>(autocompletar palabra)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">su -<span class="Apple-converted-space">                                                  </span><b>(iniciar nuevo usuario)</b></span></p>
+<p class="p5"><span class="s1">exit<span class="Apple-converted-space">                                                  </span><b>(cerrar sesion actual)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">vi<span class="Apple-converted-space">                                                    </span><b>(editar archivo con vi)</b></span></p>
+<p class="p5"><span class="s1">nano<span class="Apple-converted-space">                                                  </span><b>(editar archivo con nano)</b></span></p>
+<p class="p5"><span class="s1">mcedit<span class="Apple-converted-space">                                                </span><b>(editar archivo con mcedit)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>3. Permisos de Acceso</b></span></h2>
+<p class="p6"><span class="s1">· </span><span class="s2">Tipos de Usuario</span></p>
+<p class="p5"><span class="s1">_  _  _     _  _  _     _  _  _<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space"> </span><b><i>Owner</i></b>     <span class="Apple-converted-space">  </span><b><i>Group</i></b>     <span class="Apple-converted-space">  </span><b><i>Other</i></b>     </span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">· </span><span class="s2">Permisos</span></p>
+<p class="p5"><span class="s1">r <b>(read)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">w <b>(write)</b></span></p>
+<p class="p5"><span class="s1">x <b>(execute)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p6"><span class="s2"><i>EJEMPLOS</i></span></p>
+<p class="p5"><span class="s1">chmod 777 <span class="Apple-converted-space">                      </span><b>(todos los permisos ==&gt; rwx rwx rwx)</b></span></p>
+<p class="p5"><span class="s1">chmod 664 <span class="Apple-converted-space">                      </span><b>(permisos normales ==&gt; rw- rw- r--)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">chown nahuel:nahuel <span class="Apple-converted-space">            </span><b>(cambiar dueño y grupo)</b></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>4. Bash</b></span></h2>
+<p class="p5"><span class="s1">#!/bin/bash<span class="Apple-converted-space">                              </span><b>(*primera linea* SHELL se entera que es un script)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">$0 <span class="Apple-converted-space">                                      </span><b>(nombre del script)</b></span></p>
+<p class="p5"><span class="s1">$1 $2 $3 ... $9 {$10} {$11} ...<span class="Apple-converted-space">          </span><b>(parametros)</b></span></p>
+<p class="p5"><span class="s1">$# <span class="Apple-converted-space">                                      </span><b>(cantidad total de parametros)</b></span></p>
+<p class="p5"><span class="s1">$? <span class="Apple-converted-space">                                      </span><b>(valor de retorno)</b></span></p>
+<p class="p5"><span class="s1">$* <span class="Apple-converted-space">                                      </span><b>(contiene todos los parametros)</b></span></p>
+<p class="p5"><span class="s1">$$ <span class="Apple-converted-space">                                      </span><b>(numero del proceso PID)</b></span></p>
+<p class="p5"><span class="s1">$<i>VAR</i> <span class="Apple-converted-space">                                    </span><b>(visualizar valor de la variable "VAR")</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">" "<span class="Apple-converted-space">                                      </span><b>(*debil*)</b></span></p>
+<p class="p5"><span class="s1">' '<span class="Apple-converted-space">                                      </span><b>(*fuerte* no interpreta caracteres especiales)</b></span></p>
+<p class="p5"><span class="s1">` `<span class="Apple-converted-space">                                      </span><b>(ejecucion)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><i>VAR</i>=<i>valor</i><span class="Apple-converted-space">                                </span><b>(asignar valor)</b></span></p>
+<p class="p5"><span class="s1"><i>VAR</i>='<i>string</i>' <span class="Apple-converted-space">                            </span><b>(asignar string)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">|<span class="Apple-converted-space">                                        </span><b>(conectar la salida de un comando a la entrada del otro)</b></span></p>
+<p class="p5"><span class="s1">&lt;<span class="Apple-converted-space">                                        </span><b>(leer entrada de teclado)</b></span></p>
+<p class="p5"><span class="s1">&gt;<span class="Apple-converted-space">                                        </span><b>(guardar en un archivo)</b></span></p>
+<p class="p5"><span class="s1">&gt;&gt; <span class="Apple-converted-space">                                      </span><b>(agregar en un archivo)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">#<span class="Apple-converted-space">                                        </span><b>(comentar codigo)</b></span></p>
+<p class="p5"><span class="s1">echo <span class="Apple-converted-space">                                    </span><b>(mostrar cadena en la terminal)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">-eq<span class="Apple-converted-space">                                      </span><b>(==)</b></span></p>
+<p class="p5"><span class="s1">-ne<span class="Apple-converted-space">                                      </span><b>(!=)</b></span></p>
+<p class="p5"><span class="s1">-gt<span class="Apple-converted-space">                                      </span><b>(&gt;)</b></span></p>
+<p class="p5"><span class="s1">-lt<span class="Apple-converted-space">                                      </span><b>(&lt;)</b></span></p>
+<p class="p5"><span class="s1">-ge<span class="Apple-converted-space">                                      </span><b>(&gt;=)</b></span></p>
+<p class="p5"><span class="s1">-le<span class="Apple-converted-space">                                      </span><b>(&lt;=)</b></span></p>
+<p class="p5"><span class="s1">-a <span class="Apple-converted-space">                                      </span><b>(&amp;&amp;)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">-o <span class="Apple-converted-space">                                      </span><b>(||)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">!<span class="Apple-converted-space">                                        </span><b>(!)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">-f <span class="Apple-converted-space">                                      </span><b>(verifica si es un archivo existente regular)</b></span></p>
+<p class="p5"><span class="s1">-d <span class="Apple-converted-space">                                      </span><b>(verifica si es un directorio)</b></span></p>
+<p class="p5"><span class="s1">-s <span class="Apple-converted-space">                                      </span><b>(verifica si es un archivo existente no vacío)</b></span></p>
+<p class="p5"><span class="s1">-r <span class="Apple-converted-space">                                      </span><b>(verifica si tiene permiso de lectura)</b></span></p>
+<p class="p5"><span class="s1">-w <span class="Apple-converted-space">                                      </span><b>(verifica si tiene permiso de escritura)</b></span></p>
+<p class="p5"><span class="s1">-x <span class="Apple-converted-space">                                      </span><b>(verifica si tiene permiso de ejecucion)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">(( <i>#codigo</i> ))<span class="Apple-converted-space">                            </span><b>(ejecutar instrucciones del lenguaje C)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">· </span><span class="s2">IF</span></p>
+<p class="p5"><span class="s1">if [ #condiciones ]</span></p>
+<p class="p5"><span class="s1">then</span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1">fi</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">· </span><span class="s2">FOR</span></p>
+<p class="p5"><span class="s1">for <i>i</i> in `seq <i>0</i> <i>1</i> <i>99</i>`</span></p>
+<p class="p5"><span class="s1">do</span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1">done</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">· </span><span class="s2">WHILE</span></p>
+<p class="p5"><span class="s1">while #condiciones</span></p>
+<p class="p5"><span class="s1">do</span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1"><span class="Apple-tab-span">	</span><i>#codigo</i></span></p>
+<p class="p5"><span class="s1">done</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>5. AWK</b></span></h2>
+<p class="p5"><span class="s1">ARGC<span class="Apple-converted-space">              </span><b>(numero de parametros pasados en la linea de comandos)</b></span></p>
+<p class="p5"><span class="s1">ARGV<span class="Apple-converted-space">              </span><b>(vector que contiene los parámetros)</b></span></p>
+<p class="p5"><span class="s1">FILENAME<span class="Apple-converted-space">          </span><b>(nombre de archivo de entrada actual)</b></span></p>
+<p class="p5"><span class="s1">RS<span class="Apple-converted-space">                </span><b>(separador de registros de entrada; por defecto es el caracter nueva linea)</b></span></p>
+<p class="p5"><span class="s1">ORS <span class="Apple-converted-space">              </span><b>(separador de registros de salida; por defecto es el caracter nueva linea)</b></span></p>
+<p class="p5"><span class="s1">FS<span class="Apple-converted-space">                </span><b>(separador de campos de entrada)</b></span></p>
+<p class="p5"><span class="s1">OFS <span class="Apple-converted-space">              </span><b>(separador de campos de salida)</b></span></p>
+<p class="p5"><span class="s1">OFMT<span class="Apple-converted-space">              </span><b>(formato para numeros de salida)</b></span></p>
+<p class="p5"><span class="s1">NR<span class="Apple-converted-space">                </span><b>(numero de registro que esta siendo procesado actualmente)</b></span></p>
+<p class="p5"><span class="s1">NF<span class="Apple-converted-space">                </span><b>(numero de campos que contiene el registro actual)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">continue<span class="Apple-converted-space">          </span><b>(corta la ejecucion del bloque y vuelve a evaluar la condicion)</b></span></p>
+<p class="p5"><span class="s1">break <span class="Apple-converted-space">            </span><b>(corta la ejecucion del bloque y sale del ciclo)</b></span></p>
+<p class="p5"><span class="s1">next<span class="Apple-converted-space">              </span><b>(corta la ejecucion del registro y sigue con el siguiente)</b></span></p>
+<p class="p5"><span class="s1">exit<span class="Apple-converted-space">              </span><b>(ejecuta en END y finaliza el awk)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">= <span class="Apple-converted-space">                </span><b>(asignacion)</b></span></p>
+<p class="p5"><span class="s1">?:<span class="Apple-converted-space">                </span><b>(condicional)</b></span></p>
+<p class="p5"><span class="s1">in<span class="Apple-converted-space">                </span><b>(pertenencia a un vector)</b></span></p>
+<p class="p5"><span class="s1">~ <span class="Apple-converted-space">                </span><b>(coincide)</b></span></p>
+<p class="p5"><span class="s1">!~<span class="Apple-converted-space">                </span><b>(no coincide)</b></span></p>
+<p class="p5"><span class="s1">$ <span class="Apple-converted-space">                </span><b>(campo)</b><span class="Apple-converted-space">   </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>6. Expresiones Regulares (regex)</b></span></h2>
+<p class="p5"><span class="s1">c <span class="Apple-converted-space">                                          </span><b>(coincide con cualquier caracter)</b></span></p>
+<p class="p5"><span class="s1">\<i>c</i><span class="Apple-converted-space">                                          </span><b>(coincide con el caracter literal c)</b></span></p>
+<p class="p5"><span class="s1">. <span class="Apple-converted-space">                                          </span><b>(cualquier caracter, incluido el caracter nueva línea)</b></span></p>
+<p class="p5"><span class="s1">^<i>expresion</i><span class="Apple-converted-space">                                  </span><b>(cualquier cadena que comience con “expresion”)</b></span></p>
+<p class="p5"><span class="s1"><i>expresion</i>$<span class="Apple-converted-space">                                  </span><b>(cualquier cadena que termine con “expresion”)</b></span></p>
+<p class="p5"><span class="s1">[<i>abc...</i>]<span class="Apple-converted-space">                                    </span><b>(cualquiera de los caracteres abc...)</b></span></p>
+<p class="p5"><span class="s1">[^<i>abc...</i>] <span class="Apple-converted-space">                                  </span><b>(coincide con cualquier caracter excepto abc...)</b></span></p>
+<p class="p5"><span class="s1"><i>expresion1</i>|<i>expresion2</i> <span class="Apple-converted-space">                      </span><b>(coincide tanto con las cadenas representadas por la expresion1 como con las representadas por la expresion2)</b></span></p>
+<p class="p5"><span class="s1"><i>expresión</i>+<span class="Apple-converted-space">                                  </span><b>(coincide si se encuentra con una o mas ocurrencias de la expresion)</b></span></p>
+<p class="p5"><span class="s1"><i>expresión</i>*<span class="Apple-converted-space">                                  </span><b>(coincide si se encuentra con ninguna o mas ocurrencias de la expresion)</b></span></p>
+<p class="p5"><span class="s1"><i>expresión</i>?<span class="Apple-converted-space">                                  </span><b>(coincide si se encuentra con una o ninguna ocurrencia de la expresion)</b></span></p>
+<p class="p5"><span class="s1">()<span class="Apple-converted-space">                                          </span><b>(los parentesis se utilizan para cambiar la precedencia de los operadores)</b></span></p>
+<p class="p5"><span class="s1"><i>expresion</i>{<i>n</i>}<span class="Apple-converted-space">                                </span><b>(la expresion debe estar repetida en la cadena de caracteres n veces)</b></span></p>
+<p class="p5"><span class="s1"><i>expresion</i>{<i>n</i>,} <span class="Apple-converted-space">                              </span><b>(la expresion debe estar repetida en la cadena por lo menos n veces)</b></span></p>
+<p class="p5"><span class="s1"><i>expresion</i>{<i>n</i>, <i>m</i>} <span class="Apple-converted-space">                            </span><b>(la expresion debe estar repetida por lo menos n veces y como maximo m veces)</b></span></p>
+<p class="p5"><span class="s1">\w<span class="Apple-converted-space">                                          </span><b>(coincide con cualquier caracter que pueda constituir una palabra)</b></span></p>
+<p class="p5"><span class="s1">\W<span class="Apple-converted-space">                                          </span><b>(coincide con cualquier caracter que no pueda constituir una palabra)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">[:alnum:] <span class="Apple-converted-space">                                  </span><b>(caracter alfanumerico)</b></span></p>
+<p class="p5"><span class="s1">[:alpha:] <span class="Apple-converted-space">                                  </span><b>(caracter alfabetico)</b></span></p>
+<p class="p5"><span class="s1">[:blank:] <span class="Apple-converted-space">                                  </span><b>(espacio o tabulador)</b></span></p>
+<p class="p5"><span class="s1">[:digit:] <span class="Apple-converted-space">                                  </span><b>(caracter numerico)</b></span></p>
+<p class="p5"><span class="s1">[:lower:] <span class="Apple-converted-space">                                  </span><b>(caracter alfabetico minuscula)</b></span></p>
+<p class="p5"><span class="s1">[:print:] <span class="Apple-converted-space">                                  </span><b>(caracter imprimible, es decir que no sea un caracter de control)</b></span></p>
+<p class="p5"><span class="s1">[:punct:] <span class="Apple-converted-space">                                  </span><b>(caracter de puntuacion, como un punto y coma, una coma o un punto)</b></span></p>
+<p class="p5"><span class="s1">[:space:] <span class="Apple-converted-space">                                  </span><b>(espacios, tabuladores, caracteres nueva linea o cualquier otro caracter que represente un espacio en blanco)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">gsub(<i>r</i>, <i>s</i>, <i>t</i>) <span class="Apple-converted-space">                              </span><b>(funcion para sustitucion "global"; cada ocurrencia de la expresion regular r en la variable t sera reemplazada por la cadena s)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">gsub(<i>r</i>, <i>s</i>)<span class="Apple-converted-space">                                  </span><b>(si no escribo el parametro t, se usara $0)</b></span></p>
+<p class="p5"><span class="s1">index(<i>s</i>, <i>t</i>) <span class="Apple-converted-space">                                </span><b>(si t es una cadena de caracteres dentro de la cadena s, ésta función devuelve la posición donde comienza t)</b></span></p>
+<p class="p5"><span class="s1">length(<i>s</i>) <span class="Apple-converted-space">                                  </span><b>(devuelve el tamaño en caracteres de s)</b></span></p>
+<p class="p5"><span class="s1">match(<i>s</i>, <i>r</i>) <span class="Apple-converted-space">                                </span><b>(funciona igual que index(), solo que r puede ser una expresion regular)</b></span></p>
+<p class="p5"><span class="s1">sprintf(<i>formato</i>, <i>lista-de-valores</i>)<span class="Apple-converted-space">          </span><b>(funciona de la misma forma que el printf del lenguaje C)</b></span></p>
+<p class="p5"><span class="s1">sub(<i>r</i>, <i>s</i>, <i>t</i>)<span class="Apple-converted-space">                                </span><b>(igual que gsub(), pero solo sustituye la primer ocurrencia)</b></span></p>
+<p class="p5"><span class="s1">substr(<i>s</i>, <i>i</i>, <i>n</i>) <span class="Apple-converted-space">                            </span><b>(devuelve la porcion de la cadena s que comienza en la posicion i y termina en la posicion n)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">substr(<i>s</i>, <i>i</i>)<span class="Apple-converted-space">                                </span><b>(si no se especifica n, devuelve desde i hasta el final de la cadena)</b></span></p>
+<p class="p5"><span class="s1">tolower(<i>s</i>)<span class="Apple-converted-space">                                  </span><b>(devuelve una copia de s, con todas las mayusculas convertidas a minusculas)</b></span></p>
+<p class="p5"><span class="s1">toupper(<i>s</i>)<span class="Apple-converted-space">                                  </span><b>(devuelve una copia de s, con todas las minusculas convertidas a mayusculas)</b></span></p>
+<p class="p5"><span class="s1">int(<i>x</i>)<span class="Apple-converted-space">                                      </span><b>(devuelve el numero x truncado a entero)</b></span></p>
+<p class="p5"><span class="s1">rand()<span class="Apple-converted-space">                                      </span><b>(devuelve un numero aleatorio entre 0 y 1)</b></span></p>
+<p class="p5"><span class="s1">sin(<i>x</i>)<span class="Apple-converted-space">                                      </span><b>(devuelve el seno de x)</b></span></p>
+<p class="p5"><span class="s1">sqrt(<i>x</i>) <span class="Apple-converted-space">                                    </span><b>(devuelve la raiz cuadrada de x)</b></span></p>
+<p class="p5"><span class="s1">srand(<i>expr</i>) <span class="Apple-converted-space">                                </span><b>(establece una semilla para el generador de numeros aleatorios que usa rand())</b></span></p>
+<p class="p5"><span class="s1">srand() <span class="Apple-converted-space">                                    </span><b>(si no se especifica expr, utiliza el reloj)</b></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>7. Vi</b></span></h2>
+<p class="p5"><span class="s1">a<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(agregar)</b></span></p>
+<p class="p5"><span class="s1">i<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(insertar)</b></span></p>
+<p class="p5"><span class="s1">x<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(borrar)</b></span></p>
+<p class="p5"><span class="s1">dw<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(borrar palabra)</b></span></p>
+<p class="p5"><span class="s1">r<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(sustituir)</b></span></p>
+<p class="p5"><span class="s1">o<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(nueva linea)</b></span></p>
+<p class="p5"><span class="s1">u<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(deshacer ultimo cambio)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">:0<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(ir a la primera linea)</b></span></p>
+<p class="p5"><span class="s1">:$<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(ir a la ultima linea)</b></span></p>
+<p class="p5"><span class="s1">?<i>STRING</i><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(buscar string -&gt; presionar "n" para buscar anterior)</b></span></p>
+<p class="p5"><span class="s1">/<i>STRING</i><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(buscar string -&gt; presionar "n" para buscar siguiente)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><i>ESC</i> <span class="Apple-converted-space">    <span class="Apple-tab-span">	</span>        </span><b>(<i>MODO DE COMANDOS</i>)</b></span></p>
+<p class="p5"><span class="s1">:w<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(guardar)</b></span></p>
+<p class="p5"><span class="s1">:q!<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(salir)</b></span></p>
+<p class="p5"><span class="s1">:wq<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>(guardar y salir)</b></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>8. Git</b></span></h2>
+<p class="p5"><span class="s1">git clone https://github.com/nahuelavalos/mutants.git<span class="Apple-converted-space">      </span><b>(clonar proyecto Github)</b></span></p>
+<p class="p5"><span class="s1">cd mutants <span class="Apple-converted-space">                                                </span><b>(pararse dentro del proyecto)</b></span></p>
+<p class="p5"><span class="s1">git status <span class="Apple-converted-space">                                                </span><b>(verificar status)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">git add .<span class="Apple-converted-space">                                                  </span><b>(indicar directorio del commit)</b></span></p>
+<p class="p5"><span class="s1">git commit -m “fix mutant attributes”<span class="Apple-converted-space">                      </span><b>(setear comentarios del commit)</b></span></p>
+<p class="p5"><span class="s1">git push <span class="Apple-converted-space">                                                  </span><b>(ejecutar commit)</b></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>9. CMD (Windows)</b></span></h2>
+<p class="p5"><span class="s1">cmd<span class="Apple-converted-space">                                </span><b>(iniciar una nueva instancia de la consola)</b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">start<span class="Apple-converted-space">                              </span><b>(iniciar un programa ejecutable)</b></span></p>
+<p class="p5"><span class="s1">exit <span class="Apple-converted-space">                              </span><b>(salir de la interfaz de comandos)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">help <span class="Apple-converted-space">                              </span><b>(mostrar ayuda sobre los comandos de windows)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">cls<span class="Apple-converted-space">                                </span><b>(limpiar la pantalla) ==&gt; </b></span><span class="s2"><b><i>clear</i></b></span></p>
+<p class="p5"><span class="s1">dir<span class="Apple-converted-space">                                </span><b>(desplegar lista de archivos y subcarpetas) ==&gt; </b></span><span class="s2"><b><i>ls</i></b></span></p>
+<p class="p5"><span class="s1">cd <span class="Apple-converted-space">                                </span><b>(mostrar el nombre de la carpeta actual o cambiar de carpeta)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">type <span class="Apple-converted-space">                              </span><b>(desplegar todas las lineas de un archivo)==&gt; </b></span><span class="s2"><b><i>cat</i></b></span></p>
+<p class="p5"><span class="s1">grep <span class="Apple-converted-space">                              </span><b>(filtrar string) ==&gt; </b></span><span class="s2"><b><i>findstr</i></b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">copy <span class="Apple-converted-space">                              </span><b>(copiar archivo) ==&gt; </b></span><span class="s2"><b><i>cp</i></b></span></p>
+<p class="p5"><span class="s1">move <span class="Apple-converted-space">                              </span><b>(mover archivo) ==&gt; </b></span><span class="s2"><b><i>mv</i></b></span></p>
+<p class="p5"><span class="s1">del<span class="Apple-converted-space">                                </span><b>(eliminar archivo) ==&gt; </b></span><span class="s2"><b><i>rm</i></b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">mkdir<span class="Apple-converted-space">                              </span><b>(crear carpeta)</b></span></p>
+<p class="p5"><span class="s1">rmdir<span class="Apple-converted-space">                              </span><b>(eliminar carpeta) ==&gt; </b></span><span class="s2"><b><i>rm -r</i></b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">time <span class="Apple-converted-space">                              </span><b>(mostrar o establecer la hora del sistema)</b></span></p>
+<p class="p5"><span class="s1">date <span class="Apple-converted-space">                              </span><b>(mostrar o establecer la fecha del sistema)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">ipconfig <span class="Apple-converted-space">                          </span><b>(mostrar los parametros de una conexion de red) ==&gt; </b></span><span class="s2"><b><i>ifconfig</i></b></span></p>
+<p class="p5"><span class="s1">ping <span class="Apple-converted-space">                              </span><b>(probar una conexion de red, enviando y recibiendo un paquete de datos)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">find <span class="Apple-converted-space">                              </span><b>(buscar una cadena de texto dentro de un archivo)</b></span></p>
+<p class="p5"><span class="s1">sort <span class="Apple-converted-space">                              </span><b>(ordenar los resultados obtenidos a traves de un comando)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">msinfo32 <span class="Apple-converted-space">                          </span><b>(iniciar la herramienta que muestra los datos tecnicos del equipo y del sistema operativo)</b></span></p>
+<p class="p5"><span class="s1">systeminfo <span class="Apple-converted-space">                        </span><b>(mostrar las propiedades y la configuracion del equipo)</b></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">netstat -nao |find /i ":<i>8094</i>"<span class="Apple-converted-space">      </span><b>(verificar si el puerto 8094 esta tomado)</b></span></p>
+<p class="p5"><span class="s1">tasklist /fi "PID eq <i>9448</i>" <span class="Apple-converted-space">        </span><b>(validar con el PID)</b></span></p>
+<p class="p5"><span class="s1">taskkill /PID <i>9448</i> /F<span class="Apple-converted-space">              </span><b>(matar proceso con el PID)</b></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+</body>
+</html>
